@@ -1,0 +1,122 @@
+[{
+    "layer": "top",
+    "output": "VGA-1",
+    "modules-left": ["clock", "mpd", "cava"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["hyprland/window", "pulseaudio", "cpu", "memory", "temperature", "network", "custom/logout"],
+    
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate"
+    },
+    "mpd": {
+        "format": "{stateIcon} {title}",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "Stopped",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+        "max-length": 32,
+        "on-click": "mpc toggle",
+        "on-click-right": "mpc next"
+    },
+    "cava": {
+//        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 60,
+        "autosens": 1,
+        "sensitivity": 100,
+        "bars": 12,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pipewire",
+        "source": "default",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 0,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "interval": 1
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 32
+    },
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "󰍛 {}%"
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": " {temperatureC}°C",
+        "format": " {temperatureC}°C",
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈁",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}, via {gwaddr} 󰈀",
+        "format-linked": "󰈁",
+        "format-disconnected": "󰈂"
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": " {volume}%",
+        "format-muted": "󰖁 muted",
+        "on-click": "pavucontrol"
+    },
+    "custom/logout": {
+        "format": "󰗽",
+        "on-click": "wlogout"
+    }
+}, {
+    
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "modules-left": ["clock"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["hyprland/window", "tray"], 
+
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "interval": 1
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true,
+        "max-length": 12
+    },
+    "tray": {
+        "spacing": 10
+    },
+}]
+

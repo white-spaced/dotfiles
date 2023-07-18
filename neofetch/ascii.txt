@@ -1,0 +1,20 @@
+
+\e[0;36m                   -`
+\e[0;36m                  .o+`
+\e[0;36m                 `ooo/
+\e[0;36m                `+oooo:
+\e[0;36m         |\e[0;34m\    \e[0;36m`+oooooo:    _\e[0;34m_
+\e[0;36m         |\e[0;34m*\   \e[0;36m-+oooooo+:  /\e[0;34m*/
+\e[0;36m         |\e[0;34m**\ \e[0;36m/:-:++oooo+:/\e[0;34m**|
+\e[0;37m     \   \e[0;36m|\e[0;34m**`\e[0;36m/++++++++++++:\e[0;34m**|   \e[0;37m/
+\e[0;37m      \  \e[0;36m|\e[0;34m*`\e[0;36m/++++\e[0;37m()\e[0;36m++\e[0;37m()\e[0;36m++++:\e[0;34m*|  \e[0;37m/
+\e[0;37m       \ \e[0;36m|\e[0;34m`\e[0;36m/+++*\e[0;34moooooooo*ooo*| \e[0;37m/
+\e[0;37m   ------\e[0;34m./ooossss\e[0;36m\/\/\e[0;34msssssso+`\e[0;37m------
+\e[0;37m       /\e[0;34m.oossssso-`````ossssss+`\e[0;37m\
+\e[0;37m      /\e[0;34m-osssssso.      :ssssssso.\e[0;37m\
+\e[0;37m     /\e[0;34m:osssssss/        osssso+++.\e[0;37m\
+\e[0;34m     /ossssssss/        +ssssooo/-
+\e[0;34m   `/ossssso+/:-        -:/+osssso+-
+\e[0;34m  `+sso+:-`                 `.-/+oso:
+\e[0;34m `++:.                           `-/+/
+\e[0;34m .`                                 `/
